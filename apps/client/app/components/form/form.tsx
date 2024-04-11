@@ -44,7 +44,7 @@ export default function TopicForm() {
         <FormField
           control={form.control}
           name="keyword"
-          render={({ field }) => (
+          render={({ field }: { field: any }) => (
             <FormItem>
               <FormLabel className="text-2xl">BROAD TOPIC:</FormLabel>
               <FormControl>

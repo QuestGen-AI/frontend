@@ -4,10 +4,4 @@ interface Data {
   passage: string;
 }
 
-interface DataState {
-  data: Data;
-  updateData: (data: Data) => void;
-  resetData: () => void;
-}
-
-export type { Data, DataState };
+export type { Data };
