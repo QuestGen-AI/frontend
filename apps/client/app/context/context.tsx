@@ -1,9 +1,8 @@
 import { createContext } from "react";
-import { Data } from "../types/data";
 
 export interface DataContextType {
-  data: Data | null;
-  setData: React.Dispatch<React.SetStateAction<Data | null>>;
+  data: string | null;
+  setData: React.Dispatch<React.SetStateAction<string | null>>;
   isLoading: boolean;
   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
 }

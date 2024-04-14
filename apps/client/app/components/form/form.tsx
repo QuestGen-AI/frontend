@@ -34,7 +34,7 @@ export default function TopicForm() {
     if (data) {
       setData(data);
     } else {
-      setData({ topic: "ERROR", passage: "ERROR OCCURED. PLEASE RETRY." });
+      setData("ERROR");
     }
   }
 

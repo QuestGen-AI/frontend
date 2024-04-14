@@ -1,7 +1,6 @@
 import { Label } from "@repo/ui/components/ui/label";
 import TopicForm from "./components/form/form";
-import Passage from "./components/output/passage";
-import Topic from "./components/output/topic";
+import Output from "./components/output/output";
 
 export default async function Page() {
   return (
@@ -17,8 +16,7 @@ export default async function Page() {
         <p className="text-sm text-muted-foreground">
           You can copy generated paragraph by clicking it!
         </p>
-        <Topic />
-        <Passage />
+        <Output />
       </div>
     </main>
   );

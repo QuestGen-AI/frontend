@@ -1,7 +1,5 @@
 "use server";
 
-import { Data } from "../../types/data";
-
 const fetcher = async (url: string, keyword: string) => {
   const res = await fetch(url, {
     method: "POST",
@@ -20,10 +18,13 @@ const fetcher = async (url: string, keyword: string) => {
 
 async function generate(keyword: string) {
   try {
-    const res: Response = await fetcher("http://16.170.208.227", keyword);
-    const data: Data = await res.json();
+    const res: Response = await fetcher("http://13.209.5.237:8000", keyword);
+    const data: string = await res.json();
+    console.log(data);
+
     return { data };
   } catch (error) {
+    console.log(error);
     return { data: null };
   }
 }
